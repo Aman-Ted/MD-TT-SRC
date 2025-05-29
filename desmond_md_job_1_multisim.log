@@ -1,0 +1,323 @@
+Molecular Dynamics
+Job launching command:
+$SCHRODINGER/utilities/multisim -VIEWNAME desmond_molecular_dynamics_gui.MDApp -JOBNAME desmond_md_job_1 -HOST localhost -maxjob 1 -cpu 1 -m desmond_md_job_1.msj -c desmond_md_job_1.cfg -description "Molecular Dynamics" desmond_md_job_1.cms -mode umbrella -PROJ /home/aman/.schrodinger/tmp/Tmp_20Aug2024_1420_32519 -DISP append -o desmond_md_job_1-out.cms -lic DESMOND_ACADEMIC:16
+
+Multisim runs in the umbrella mode.
+Booting the multisim workflow engine...
+           multisim version: 4.0.0
+            mmshare version: 6.0
+                    Jobname: desmond_md_job_1
+                   Username: aman
+              Main job host: undetected
+                Subjob host: aman-OptiPlex-3010
+                     Job ID: aman-OptiPlex-3010-0-66c4456e
+            multisim script: desmond_md_job_1.msj
+       Structure input file: desmond_md_job_1.cms
+            CPUs per subjob: "1"
+             Job start time: Tue Aug 20 14:27:46 2024
+           Launch directory: /home/aman/Desktop/8-MD simulation-Yanang/2-MPZ600-MD/desmond_md_job_1
+               $SCHRODINGER: /opt/schrodinger2022-4
+               $OPLS_DIR: <empty>
+
+Parsing the multisim script file...
+
+Summary of user stages:
+  stage 1 - task
+  stage 2 - simulate, Brownian Dynamics NVT, T = 10 K, small timesteps, and restraints on solute heavy atoms, 100ps
+  stage 3 - simulate, NVT, T = 10 K, small timesteps, and restraints on solute heavy atoms, 12ps
+  stage 4 - simulate, NPT, T = 10 K, and restraints on solute heavy atoms, 12ps
+  stage 5 - simulate, NPT and restraints on solute heavy atoms, 12ps
+  stage 6 - simulate, NPT and no restraints, 24ps
+  stage 7 - simulate
+(7 stages in total)
+
+Workflow is started now.
+
+Stage 1 - task
+stage[1] task: Detecting system type...
+stage[1] task:   It seems a mature model system created for regular molecular dynamics simulations
+stage[1] task: Recognizing traits of system...
+stage[1] task:   (none)
+
+Stage 1 completed successfully.
+
+Stage 1 duration: 0h 0' 3"
+
+
+Stage 2 - simulate
+
+Running subjobs on hosts:
+  aman-OptiPlex-3010 (Max: 1)
+Number of jobs:       1
+Max retries per job:  3
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 0 | launched  aman-OptiPlex-3010-0-66c44580 desmond_md_job_1_2 aman-OptiPlex-3010
+1 0 0 | finished  aman-OptiPlex-3010-0-66c44580 desmond_md_job_1_2 aman-OptiPlex-3010
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+
+Job("aman-OptiPlex-3010-0-66c44580") was successfully finished.
+  Host       : localhost
+  Launch time: Tue Aug 20 14:28:00 2024
+  Start time : Tue Aug 20 14:28:00 2024
+  End time   : Tue Aug 20 14:31:27 2024
+  Duration   : 0h 3' 27"
+  CPUs       : 1
+  CPU time   : 0h 3' 27"
+  Exit code  : 0
+  Jobname    : desmond_md_job_1_2
+  Stage      : 2 (simulate)
+
+Stage 2 completed successfully.
+
+Stage 2 duration: 0h 3' 40"
+
+
+Stage 3 - simulate
+
+Running subjobs on hosts:
+  aman-OptiPlex-3010 (Max: 1)
+Number of jobs:       1
+Max retries per job:  3
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 0 | launched  aman-OptiPlex-3010-0-66c4465c desmond_md_job_1_3 aman-OptiPlex-3010
+1 0 0 | finished  aman-OptiPlex-3010-0-66c4465c desmond_md_job_1_3 aman-OptiPlex-3010
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+
+Job("aman-OptiPlex-3010-0-66c4465c") was successfully finished.
+  Host       : localhost
+  Launch time: Tue Aug 20 14:31:40 2024
+  Start time : Tue Aug 20 14:31:40 2024
+  End time   : Tue Aug 20 14:32:22 2024
+  Duration   : 0h 0' 42"
+  CPUs       : 1
+  CPU time   : 0h 0' 42"
+  Exit code  : 0
+  Jobname    : desmond_md_job_1_3
+  Stage      : 3 (simulate)
+
+Stage 3 completed successfully.
+
+Stage 3 duration: 0h 0' 54"
+
+
+Stage 4 - simulate
+
+Running subjobs on hosts:
+  aman-OptiPlex-3010 (Max: 1)
+Number of jobs:       1
+Max retries per job:  3
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 0 | launched  aman-OptiPlex-3010-0-66c44692 desmond_md_job_1_4 aman-OptiPlex-3010
+1 0 0 | finished  aman-OptiPlex-3010-0-66c44692 desmond_md_job_1_4 aman-OptiPlex-3010
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+
+Job("aman-OptiPlex-3010-0-66c44692") was successfully finished.
+  Host       : localhost
+  Launch time: Tue Aug 20 14:32:34 2024
+  Start time : Tue Aug 20 14:32:34 2024
+  End time   : Tue Aug 20 14:33:10 2024
+  Duration   : 0h 0' 36"
+  CPUs       : 1
+  CPU time   : 0h 0' 36"
+  Exit code  : 0
+  Jobname    : desmond_md_job_1_4
+  Stage      : 4 (simulate)
+
+Stage 4 completed successfully.
+
+Stage 4 duration: 0h 0' 48"
+
+
+Stage 5 - simulate
+
+Running subjobs on hosts:
+  aman-OptiPlex-3010 (Max: 1)
+Number of jobs:       1
+Max retries per job:  3
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 0 | launched  aman-OptiPlex-3010-0-66c446c2 desmond_md_job_1_5 aman-OptiPlex-3010
+1 0 0 | finished  aman-OptiPlex-3010-0-66c446c2 desmond_md_job_1_5 aman-OptiPlex-3010
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+
+Job("aman-OptiPlex-3010-0-66c446c2") was successfully finished.
+  Host       : localhost
+  Launch time: Tue Aug 20 14:33:22 2024
+  Start time : Tue Aug 20 14:33:22 2024
+  End time   : Tue Aug 20 14:34:00 2024
+  Duration   : 0h 0' 38"
+  CPUs       : 1
+  CPU time   : 0h 0' 38"
+  Exit code  : 0
+  Jobname    : desmond_md_job_1_5
+  Stage      : 5 (simulate)
+
+Stage 5 completed successfully.
+
+Stage 5 duration: 0h 0' 49"
+
+
+Stage 6 - simulate
+
+Running subjobs on hosts:
+  aman-OptiPlex-3010 (Max: 1)
+Number of jobs:       1
+Max retries per job:  3
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 0 | launched  aman-OptiPlex-3010-0-66c446f4 desmond_md_job_1_6 aman-OptiPlex-3010
+1 0 0 | finished  aman-OptiPlex-3010-0-66c446f4 desmond_md_job_1_6 aman-OptiPlex-3010
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+
+Job("aman-OptiPlex-3010-0-66c446f4") was successfully finished.
+  Host       : localhost
+  Launch time: Tue Aug 20 14:34:12 2024
+  Start time : Tue Aug 20 14:34:12 2024
+  End time   : Tue Aug 20 14:35:06 2024
+  Duration   : 0h 0' 54"
+  CPUs       : 1
+  CPU time   : 0h 0' 54"
+  Exit code  : 0
+  Jobname    : desmond_md_job_1_6
+  Stage      : 6 (simulate)
+
+Stage 6 completed successfully.
+
+Stage 6 duration: 0h 1' 6"
+
+
+Stage 7 - simulate
+
+Running subjobs on hosts:
+  aman-OptiPlex-3010 (Max: 1)
+Number of jobs:       1
+Max retries per job:  3
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 0 | launched  aman-OptiPlex-3010-0-66c44736 desmond_md_job_1 aman-OptiPlex-3010
+1 0 0 | finished  aman-OptiPlex-3010-0-66c44736 desmond_md_job_1 aman-OptiPlex-3010
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+
+Job("aman-OptiPlex-3010-0-66c44736") was successfully finished.
+  Host       : localhost
+  Launch time: Tue Aug 20 14:35:18 2024
+  Start time : Tue Aug 20 14:35:18 2024
+  End time   : Sat Aug 24 20:34:13 2024
+  Duration   : 101h 58' 55"
+  CPUs       : 1
+  CPU time   : 101h 58' 55"
+  Exit code  : 0
+  Jobname    : desmond_md_job_1
+  Stage      : 7 (simulate)
+
+Stage 7 completed successfully.
+
+Stage 7 duration: 101h 59' 17"
+
+Cleaning up files...
+
+Multisim summary (Sat Aug 24 20:34:25 2024):
+  Stage 1 completed.
+  Stage 2 completed.
+  Stage 3 completed.
+  Stage 4 completed.
+  Stage 5 completed.
+  Stage 6 completed.
+  Stage 7 completed.
+  Total duration: 102h 6' 38"
+  Total GPU time: 102h 5' 12" (used by 6 subjob(s))
+Multisim completed.
+[running at reduced cpu priority]
