@@ -1,5 +1,5 @@
 Job launching command:
-$SCHRODINGER/utilities/multisim -JOBNAME desmond_setup_1 -m desmond_setup_1.msj desmond_setup_1.mae -o desmond_setup_1-out.cms -HOST localhost -PROJ /home/aman/.schrodinger/tmp/Tmp_13Aug2024_1704_21552 -DISP append -VIEWNAME system_builder_gui.SystemBuilderPanel -TMPLAUNCHDIR
+$SCHRODINGER/utilities/multisim -JOBNAME desmond_setup_1 -m desmond_setup_1.msj desmond_setup_1.mae -o desmond_setup_1-out.cms -HOST localhost -PROJ /home/aman/.schrodinger/tmp/Tmp_20Aug2024_1420_32519 -DISP append -VIEWNAME system_builder_gui.SystemBuilderPanel -TMPLAUNCHDIR
 
 Booting the multisim workflow engine...
            multisim version: 4.0.0
@@ -8,12 +8,12 @@ Booting the multisim workflow engine...
                    Username: aman
               Main job host: undetected
                 Subjob host: localhost
-                     Job ID: aman-OptiPlex-3010-0-66bb310f
+                     Job ID: aman-OptiPlex-3010-0-66c4450a
             multisim script: desmond_setup_1.msj
        Structure input file: desmond_setup_1.mae
             CPUs per subjob: "1"
-             Job start time: Tue Aug 13 17:10:28 2024
-           Launch directory: /home/aman/Desktop/8-MD simulation-Yanang/1-Telobine-SRC/desmond_setup_1
+             Job start time: Tue Aug 20 14:26:06 2024
+           Launch directory: /home/aman/Desktop/8-MD simulation-Yanang/2-MPZ600-MD/desmond_setup_1
                $SCHRODINGER: /opt/schrodinger2022-4
                $OPLS_DIR: <empty>
 
@@ -58,19 +58,19 @@ JobDJ columns:
 
 C A W | Activity  JobId  JobName  JobHost
 - - - | --------- -----------------------
-0 1 0 | launched  aman-OptiPlex-3010-0-66bb3117 desmond_setup_1_2-in localhost [aman-OptiPlex-3010]
-1 0 0 | finished  aman-OptiPlex-3010-0-66bb3117 desmond_setup_1_2-in localhost [aman-OptiPlex-3010]
+0 1 0 | launched  aman-OptiPlex-3010-0-66c44512 desmond_setup_1_2-in localhost [aman-OptiPlex-3010]
+1 0 0 | finished  aman-OptiPlex-3010-0-66c44512 desmond_setup_1_2-in localhost [aman-OptiPlex-3010]
 
 All jobs have completed.
 
 1 of 1 job(s) succeeded; 0 job(s) failed.
 
 
-Job("aman-OptiPlex-3010-0-66bb3117") was successfully finished.
+Job("aman-OptiPlex-3010-0-66c44512") was successfully finished.
   Host       : localhost
-  Launch time: Tue Aug 13 17:10:31 2024
-  Start time : Tue Aug 13 17:10:32 2024
-  End time   : Tue Aug 13 17:10:54 2024
+  Launch time: Tue Aug 20 14:26:10 2024
+  Start time : Tue Aug 20 14:26:10 2024
+  End time   : Tue Aug 20 14:26:32 2024
   Duration   : 0h 0' 22"
   CPUs       : 1
   CPU time   : 0h 0' 22"
@@ -80,7 +80,7 @@ Job("aman-OptiPlex-3010-0-66bb3117") was successfully finished.
 
 Stage 2 completed successfully.
 
-Stage 2 duration: 0h 0' 28"
+Stage 2 duration: 0h 0' 26"
 
 
 Stage 3 - assign_forcefield
@@ -90,7 +90,7 @@ OPLS Version: OPLS_2005
 FEP mode: 2
 FEP retain angle: 2
 Skip creating the fepio_fep block
-Reading input structures (17379884 bytes).
+Reading input structures (17358857 bytes).
 Creating New ffio_ff block...
 Creating molsym
 Creating New ffio_ff block...
@@ -105,7 +105,7 @@ Creating molsym
 force_field_builder: job successfully run
 
 Writing 6 structures to desmond_setup_1_3-out.mae
-wrote : 17379884 bytes
+wrote : 17358857 bytes
 
 Stage 3 completed successfully.
 
@@ -113,9 +113,9 @@ Stage 3 duration: 0h 0' 19"
 
 Cleaning up files...
 
-Multisim summary (Tue Aug 13 17:11:17 2024):
+Multisim summary (Tue Aug 20 14:26:54 2024):
   Stage 1 completed.
   Stage 2 completed.
   Stage 3 completed.
-  Total duration: 0h 0' 49"
+  Total duration: 0h 0' 47"
 Multisim completed.
